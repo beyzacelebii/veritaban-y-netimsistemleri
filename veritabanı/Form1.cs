@@ -21,7 +21,7 @@ namespace veritabanı
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            
             baglanti.Open();
             NpgsqlCommand komut1 = new NpgsqlCommand("insert into rezervasyon (rezervasyonno,musterino,aracno,alısyeri,tarih) values (@p1,@p2,@p3,@p4,@p5)", baglanti);
             komut1.Parameters.AddWithValue("@p1", int.Parse(textBox6.Text));
